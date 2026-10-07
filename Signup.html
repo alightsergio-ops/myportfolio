@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}.logo h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+}
+
+.logo span {
+    font-family: "Pacifico", cursive;
+    color: #ff641e;
+}
+button {
+    border: none;
+    cursor: pointer;
+}#dark {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(79, 79, 236);
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background: black;
+   
+}
+
+.containers{
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 15px;
+}
+
+.contain{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.08);
+}
+.contain img{
+    width: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.contain h3{
+    font-size: 18px;
+    margin-top: 8px;
+}
+.font{
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.icon .icons{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(224, 225, 243);
+    border-radius: 8px;
+    cursor: pointer
+    ;
+}
+.icon .icons i{
+    font-size: 20px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-linkedin{
+    color: rgb(7, 30, 88);
+}
+.fa-twitter{
+    color: rgb(8, 38, 126);
+}
+.fa-github{
+    color: black;
+}
+
+.info{
+    background: rgb(238, 239, 245);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+
+}
+.number{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+.email{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+.location{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+
+
+ .down {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(135deg, #ff9a1a, #ec1c09); 
+   width: 100%;
+   max-width: 220px; 
+   margin: 20px auto 5px auto;
+   border-radius: 25px; 
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.down:hover {
+    background: linear-gradient(135deg, #ec1c09, #ff9a1a);
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.download i {
+    color: white;
+    font-size: 16px;
+    margin: 0; 
+}
+
+
+.download button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+
+.downloading{
+    border: none;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background: #ff641e;
+    color: white;
+    margin-top: -50%;
+}
+.number i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.email i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.location i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.download i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} 
+.info h4{
+    font-size: 11px;
+    color: rgb(151, 146, 146);
+    margin-bottom: 3px;
+}
+.info p{
+    font-size: 12px;
+    color: rgb(133, 112, 112);
+}
+
+.contains{
+    width: 68%;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.08);
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.nav i{
+    font-size: 14px;
+}
+.nav > i{
+    padding: 10px 14px;
+    background: rgb(161, 179, 203);
+    border-radius: 8px;
+    cursor: pointer;
+}  
+
+.Login{
+    display: grid;
+    border: 1px solid;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: #ff641e;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.Home a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.Contact{
+    display: grid;
+    height: 70px;
+    width: 70px;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background: rgb(224, 229, 249);
+    cursor: pointer;
+}
+.Contact a{
+    text-decoration: none;
+}
+
+.Blog{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.Blog i{
+    height: 40px;
+    width: 40px;
+}
+.Login i{
+    height: 40px;
+    width: 40px;
+}
+.Contact i{
+    height: 40px;
+    width: 40px;
+}
+.Home i{
+    height: 40px;
+    width: 40px;
+}
+.Resume i{
+    height: 40px;
+    width: 40px;
+}
+.Work i{
+    height: 40px;
+    width: 40px;
+}
+.Blog a{
+    text-decoration: none;
+}
+.Home{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.Login a{
+    text-decoration: none;
+    color: white;
+}
+
+.Resume{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+     height: 70px;
+    width: 70px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.Resume a{
+    text-decoration: none;
+}
+
+.Work{
+    display: grid;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background: #E1E8EF;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.Work a{
+    text-decoration: none;
+}
+
+
+.sign-box {
+    width: 548px;
+    margin-top: 22px;
+}
+
+
+.login {
+    width: 420px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.sign-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sign-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    background: #d9d9d9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 45px;
+}
+
+.password-box i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #444;
+}
+
+.google-btn {
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #1717c9;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.signup-btn:hover {
+    background: #1010a8;
+}
+
+.login h3 {
+    margin-top: 55px;
+    font-size: 16px;
+}
+
+.login h3 a {
+    color: blue;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <h1>Barutwanayo <span>Sergio</span></h1>
+</div>
+        <button id="dark"> <i class="fa fa-moon-o"></i> </button>
+    </header>
+    <div class="containers">
+        <div class="contain">
+          <img src="images/photo.png">
+          <h3>Barutwanayo Sergio</h3>
+          <Span class="front">Front-End Developer</Span>
+
+          <div class="icon">
+            <div class="icons">
+            <i class="fa fa-facebook"></i>
+</div>
+            <div class="icons">    
+            <i class="fa fa-linkedin"></i>
+
+            </div>
+            <div class="icons">
+            <i class="fa fa-twitter"></i>
+                     </div>
+            <div class="icons">
+                <i class="fa fa-github"></i>
+            </div>
+            
+          </div>
+
+          <div class="info">
+          <div class="number">
+    <i class="fa fa-phone"></i>
+
+    <div>
+        <h4>Phone</h4>
+        <p>0790 375 151</p>
+    </div>
+   </div>
+
+       <div class="email">
+    <i class="fa fa-envelope"></i>
+
+    <div>
+        <h4>Email</h4>
+        <p>alightsergio@gmail.com</p>
+    </div>
+    </div>
+            <div class="location">
+    <i class="fa fa-map-marker"></i>
+
+    <div>
+        <h4>Location</h4>
+        <p>Kigali, Rwanda</p>
+    </div>
+</div>
+        <div class="down">  
+<div class="download">
+    <i class="fa fa-download"></i>
+    <div>
+        <Button downloading>download</Button>
+    </div>
+
+</div>
+          </div>
+        </div>
+</div>
+        <div class="contains">
+          <div class="nav">
+            <div class="Home">
+
+               <a href="index.html" > <i class="fa fa-home"></i>
+                <span>Home</span>
+                </a>
+            </div>
+            
+            <div class="Contact">
+                
+               <a href="work.html">  <i class="fa fa-briefcase" aria-hidden="true"></i> 
+                <span>Work</span>
+                 </a>
+            </div>
+
+            <div class="Work">
+              <a href="resume.html"> <i class="fa fa-file-text"></i>
+                <span>Resume</span>
+                </a>
+            </div>
+            
+            <div class="Resume">
+              <a href="blog.html">    <i class="fa fa-book"></i>
+                <span>Blog</span>
+                </a>
+            </div>
+            
+            <div class="Blog">
+              <a href="contact.html">  <i class="fa fa-phone"></i>
+                <span>Contact</span>
+                </a>
+            </div>
+            
+            <div class="Login">
+              <a href="login.html"> <i class="fa fa-user"></i>
+                <span>Login</span>
+                </a> 
+            </div>
+            
+          </div>
+          <div class="login">
+            <h2>Sign Up</h2>
+    
+<form action="" class="sign-box">
+    <input type="name" placeholder="Full Names">
+    <div>
+        <input type="email" placeholder="Enter your Email">
+    </div>
+    <div>
+        <input type="password" id="password" placeholder="Password"> 
+    </div>
+    <div>
+        <input type="password" id="password" placeholder="Conferm Password">
+    </div>
+</form>
+    <div class="sign-box">
+    <button type="button" class="google-btn">
+         <span>Sign Up</span>
+        
+       
+    </button>
+   
+</div>
+ <h2>I have an Account, <a href="login.html">Sign in</a></h2>
+</div>
+
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

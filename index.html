@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+}.logo h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+}
+
+.logo span {
+    font-family: "Pacifico", cursive;
+    color: #ff641e;
+}
+button {
+    border: none;
+    cursor: pointer;
+}#dark {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(79, 79, 236);
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background: black;
+   
+}
+
+.containers{
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 15px;
+}
+
+.contain{
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.08);
+}
+.contain img{
+    width: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.contain h3{
+    font-size: 18px;
+    margin-top: 8px;
+}
+.font{
+    display: block;
+    color: gray;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.icon .icons{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(224, 225, 243);
+    border-radius: 8px;
+    cursor: pointer
+    ;
+}
+.icon .icons i{
+    font-size: 20px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-linkedin{
+    color: rgb(7, 30, 88);
+}
+.fa-twitter{
+    color: rgb(8, 38, 126);
+}
+.fa-github{
+    color: black;
+}
+
+.info{
+    background: rgb(238, 239, 245);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+
+}
+.number{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+.email{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+.location{
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 0;
+border-bottom: 1px solid;
+}
+
+
+ .down {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(135deg, #ff9a1a, #ec1c09); 
+   width: 100%;
+   max-width: 220px; 
+   margin: 20px auto 5px auto;
+   border-radius: 25px; 
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.down:hover {
+    background: linear-gradient(135deg, #ec1c09, #ff9a1a);
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.download i {
+    color: white;
+    font-size: 16px;
+    margin: 0; 
+}
+
+
+.download button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+
+.downloading{
+    border: none;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background: #ff641e;
+    color: white;
+    margin-top: -50%;
+}
+.number i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.email i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.location i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff641e;
+}
+.download i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} */
+.info h4{
+    font-size: 11px;
+    color: rgb(151, 146, 146);
+    margin-bottom: 3px;
+}
+.info p{
+    font-size: 12px;
+    color: rgb(133, 112, 112);
+}
+
+.contains{
+    width: 68%;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.08);
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.nav i{
+    font-size: 14px;
+}
+.nav > i{
+    padding: 10px 14px;
+    background: rgb(161, 179, 203);
+    border-radius: 8px;
+    cursor: pointer;
+}  
+
+.Home{
+    display: grid;
+    border: 1px solid;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: #ff641e;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.Blog i{
+    height: 40px;
+    width: 40px;
+    color: #333;
+}
+.Login i{
+    height: 40px;
+    width: 40px;
+    color: #333;
+}
+.Contact i{
+    height: 40px;
+    width: 40px;
+    color: #333;
+}
+.Home i{
+    height: 40px;
+    width: 40px;
+    
+}
+.Resume i{
+    height: 40px;
+    width: 40px;
+    color: #333;
+}
+.Work i{
+    height: 40px;
+    width: 40px;
+    color: #333;
+}
+.Home a{
+    text-decoration: none;
+    color: white;
+}
+.Contact{
+    display: grid;
+    height: 70px;
+    width: 70px;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+     background: #E1E8EF;
+    cursor: pointer;
+}
+.Contact a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+.Blog{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.Blog a{
+    text-decoration: none;
+    color: #333;
+}
+.Login a{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.Login a{
+    text-decoration: none;
+    color: #333;
+}
+
+.Resume{
+    display: grid;
+    border: none;
+    background: #E1E8EF;
+     height: 70px;
+    width: 70px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+ .Resume a{
+    text-decoration: none;
+    color: #333;
+ }
+
+.Work{
+    display: grid;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background: #E1E8EF;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Work a{
+    text-decoration: none;
+    color: #333;
+}
+.abouts{
+    padding: 10px;
+}
+.abouts > div:first-child{
+    margin-bottom: 25px;
+}
+.abouts h1{
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.abouts h2{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.abouts p{
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: rgb(53, 50, 50);
+}
+.abouts > div:not(:first-child){
+display: inline-block;
+vertical-align: top;
+width: 48%;
+min-height: 150px;
+margin-bottom: 15px;
+padding: 18px;
+border-radius: 12px;
+background: rgb(214, 226, 255);
+}
+.abouts > div:nth-child(2), .abouts > div:nth-child(5){
+    background: #ffe5c7;
+}
+
+.abouts > div:not(:first-child) h1{
+    display: inline;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.abouts > div:not(:first-child)i{
+   color: rgb(250, 210, 117);
+}
+.abouts > div:not(:first-child)p{
+  margin-top: 8px;
+}
+
+
+
+.container-box {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: rgb(25, 14, 12);
+}
+.resume-title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.resume-title h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.resume-column h2,
+.skills-box h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume-column h2 i {
+    color: #f29b38;
+    margin-right: 7px;
+    font-size: 15px;
+}
+
+.resume-card {
+    background: #ffe8c9;
+    padding: 14px 16px;
+    border-radius: 7px;
+    margin-bottom: 14px;
+    min-height: 70px;
+    transition: 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.resume-card .date {
+    display: block;
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.resume-card h3 {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.resume-card p {
+    font-size: 10px;
+    margin: 0;
+    color: #444;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skills-list span {
+    background: #eef1f7;
+    border: 1px solid #d9dde5;
+    border-radius: 4px;
+    padding: 5px 9px;
+    font-size: 9px;
+    color: #555;
+    transition: 0.3s ease;
+}
+
+.skills-list span:hover {
+    background: #f29b38;
+    color: white;
+    border-color: #f29b38;
+}
+
+@media (max-width: 700px) {
+
+    .top-section,
+    .skills-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .container-box {
+        padding: 25px 15px;
+    }
+
+    .resume-title h1 {
+        font-size: 24px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <h1>Barutwanayo <span>Sergio</span></h1>
+</div>
+        <button id="dark"> <i class="fa fa-moon-o"></i> </button>
+    </header>
+    <div class="containers">
+        <div class="contain">
+          <img src="images/photo.png">
+          <h3>Barutwanayo Sergio</h3>
+          <Span class="front">Front-End Developer</Span>
+
+          <div class="icon">
+            <div class="icons">
+            <i class="fa fa-facebook"></i>
+</div>
+            <div class="icons">    
+            <i class="fa fa-linkedin"></i>
+
+            </div>
+            <div class="icons">
+            <i class="fa fa-twitter"></i>
+                     </div>
+            <div class="icons">
+                <i class="fa fa-github"></i>
+            </div>
+            
+          </div>
+
+          <div class="info">
+          <div class="number">
+    <i class="fa fa-mobile"></i>
+    <div>
+        <h4>Phone</h4>
+        <p>0790 375 151</p>
+    </div>
+   </div>
+
+       <div class="email">
+    <i class="fa fa-envelope"></i>
+
+    <div>
+        <h4>Email</h4>
+        <p>alightsergio@gmail.com</p>
+    </div>
+    </div>
+            <div class="location">
+    <i class="fa fa-map-marker"></i>
+
+    <div>
+        <h4>Location</h4>
+        <p>Kigali, Rwanda</p>
+    </div>
+</div>
+        <div class="down">  
+<div class="download">
+    <i class="fa fa-download"></i>
+    <div>
+        <Button downloading>download</Button>
+    </div>
+
+</div>
+          </div>
+        </div>
+</div>
+        <div class="contains">
+          <div class="nav">
+            
+
+           
+            <div class="Home">
+               <a href="index.html" > <i class="fa fa-home"></i>
+                <span>Home</span>
+                </a>
+            </div>
+            
+            <div class="Contact">
+                
+               <a href="work.html">  <i class="fa fa-briefcase" aria-hidden="true"></i> 
+                <span>Work</span>
+                 </a>
+            </div>
+
+            <div class="Work">
+              <a href="resume.html"> <i class="fa fa-file-text"></i>
+                <span>Resume</span>
+                </a>
+            </div>
+            
+            <div class="Resume">
+              <a href="blog.html">    <i class="fa fa-book"></i>
+                <span>Blog</span>
+                </a>
+            </div>
+            
+            <div class="Blog">
+              <a href="contact.html">  <i class="fa fa-phone"></i>
+                <span>Contact</span>
+                </a>
+            </div>
+            
+            <div class="Login">
+              <a href="login.html"> <i class="fa fa-user"></i>
+                <span>Login</span>
+                </a> 
+            </div>
+            
+          </div>
+        
+          
+          <div class="abouts">
+            <div> 
+            <h1>About Me</h1>
+            <p> Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile
+front-end  developer with a keen interest in exploring the latest cutting-edge technologies.
+My journey in the world of web development has been nothing short of exhilarating, and 
+I constantly strive to enhance my skills and embrace emerging trends in the industry.</p>
+<h2>What I do!</h2>
+</div>
+            <div>
+             <i class="fa fa-code"><h1>Web Development</h1></i>
+             <p>As a developer, I find myself most 
+captivated by the power and flexibility of 
+NEXT.js. I'm always eager to dive into new
+projects that leverage NEXT.js and 
+discover innovative ways to create fast, 
+scalable, and user-friendly applications.</p>
+            </div>
+            <div>
+                <i class="fa fa-instagram"><h1>App Development</h1></i>
+              <P>    With a focus on user-centric design and
+cutting-edge technologies, I thrive on 
+building intuitive and efficient apps 
+that make a positive impact on people's 
+lives. Let's turn ideas into reality and 
+shape the future together.</P> 
+            </div>
+
+             <div>
+                <i class="fa fa-paint-brush"><h1>UI/UX Designer</h1></i>
+                <p>Crafting visually appealing and intuitive user
+interfaces that offer a delightful user 
+experience is something I'm truly fanatic 
+about.</p>
+             </div>
+
+            <div>
+                <i class="fa fa-users"><h1>MentorShip</h1></i>
+                <p>I have also found great joy in sharing my 
+knowledge with others. Being a technical 
+mentor allows me to give back to the 
+community that has supported me 
+throughout my career. </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
