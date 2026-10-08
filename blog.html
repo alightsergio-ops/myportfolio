@@ -426,6 +426,52 @@ border-bottom: 1px solid;
     font-size: 20px;
 }
 
+#blogPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-card {
+    background: #f8f9fc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.08);
+}
+
+.blog-card h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 13px;
+}
+
+.blog-card p {
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+}
+
+.blog-status {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #e8f7ee;
+    color: green;
+    font-size: 12px;
+}
+
+.loading {
+    color: #777;
+}
+
     </style>
 </head>
 <body>
@@ -443,17 +489,17 @@ border-bottom: 1px solid;
 
           <div class="icon">
             <div class="icons">
-            <i class="fa fa-facebook"></i>
+           <a href="https://www.facebook.com/profile.php?id=61581350833872"> <i class="fa fa-facebook"></i> </a>
 </div>
             <div class="icons">    
-            <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/feed/"> <i class="fa fa-linkedin"></i></a>
 
             </div>
             <div class="icons">
-            <i class="fa fa-twitter"></i>
+            <a href="https://x.com/sergio125ai"> <i class="fa fa-twitter"></i></a> 
                      </div>
             <div class="icons">
-                <i class="fa fa-github"></i>
+               <a href="https://github.com/alightsergio-ops?tab=repositories"> <i class="fa fa-github"></i></a>
             </div>
             
           </div>
@@ -535,17 +581,17 @@ border-bottom: 1px solid;
             </div>
             
           </div>
-          <div class="blogs">
-             <h1>Blog</h1>
-            <div class="blog">
-                <p>My name's Barutwanayo Sergio,I grew up in a refugee Camp where life was not easy. Every day came with challenges, and sometimes hope felt very far away. But even in those difficult moments, I had dreams of building a better future.
-Education became my strongest weapon. I chose to study Mathematics, Economics, and Computer Science (MEC) because I believed it would open doors for me. The journey was not simple. There were times I lacked resources, support, and even confidence. However, I refused to give up.
-Through determination and hard work, I continued learning and improving myself. MEC helped me develop problem-solving skills and understand the world better. It gave me hope that I could change my life and contribute to society.
-Today, I see my past not as a limitation, but as a source of strength. My story is proof that where you come from does not define where you can go. I am still on my journey, and I believe the best is yet to come.</p>
-            </div>
-          </div>
+         <div class="blogs">
+
+    <h1>Blog</h1>
+
+    <div id="blogPosts">
+        <p class="loading">Loading posts...</p>
+    </div>
+
+</div>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="blog.js"></script>
 </body>
 </html>

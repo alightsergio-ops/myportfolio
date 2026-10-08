@@ -12,24 +12,42 @@ button.addEventListener("click", function(){
     }
 });
 
-// const themeBtn = document.getElementById("themeBtn");
 
-// themeBtn.addEventListener("click", function () {
+const loginForm = document.getElementById("loginForm");
+const password = document.getElementById("password");
+const showPassword = document.getElementById("showPassword");
 
-//     document.body.classList.toggle("dark");
+// Show / hide password
+showPassword.addEventListener("change", function () {
 
-//     const icon = themeBtn.querySelector("i");
+    password.type = this.checked ? "text" : "password";
 
-//     if (document.body.classList.contains("dark")) {
+});
 
-//         icon.classList.remove("fa-moon-o");
-//         icon.classList.add("fa-sun-o");
 
-//     } else {
+// Login
+loginForm.addEventListener("submit", function(event) {
 
-//         icon.classList.remove("fa-sun-o");
-//         icon.classList.add("fa-moon-o");
+    event.preventDefault();
 
-//     }
+    const email = document.getElementById("email").value.trim();
+    const passwordValue = password.value;
+    const error = document.getElementById("error");
 
-// });
+    const correctEmail = "sergio@gmail.com";
+    const correctPassword = "123456";
+
+    if (email === correctEmail && passwordValue === correctPassword) {
+
+        localStorage.setItem("isLoggedIn", "true");
+
+        window.location.href = "dashboard.html";
+
+    } else {
+
+        error.textContent = "Invalid email or password";
+
+    }
+
+});
+

@@ -87,7 +87,7 @@ button {
     font-size: 18px;
     margin-top: 8px;
 }
-.font{
+.front {
     display: block;
     color: gray;
     font-size: 13px;
@@ -549,6 +549,15 @@ width: 40px;
     object-fit: contain;
 }
 
+#show-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #777;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -562,21 +571,21 @@ width: 40px;
         <div class="contain">
           <img src="images/photo.png">
           <h3>Barutwanayo Sergio</h3>
-          <Span class="front">Front-End Developer</Span>
+          <span class="front">Front-End Developer</span>
 
           <div class="icon">
-            <div class="icons">
-            <i class="fa fa-facebook"></i>
+              <div class="icons">
+           <a href="https://www.facebook.com/profile.php?id=61581350833872"> <i class="fa fa-facebook"></i> </a>
 </div>
             <div class="icons">    
-            <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/feed/"> <i class="fa fa-linkedin"></i></a>
 
             </div>
             <div class="icons">
-            <i class="fa fa-twitter"></i>
+            <a href="https://x.com/sergio125ai"> <i class="fa fa-twitter"></i></a> 
                      </div>
             <div class="icons">
-                <i class="fa fa-github"></i>
+               <a href="https://github.com/alightsergio-ops?tab=repositories"> <i class="fa fa-github"></i></a>
             </div>
             
           </div>
@@ -659,47 +668,44 @@ width: 40px;
             </div>
             
           </div>
-          <div class="login-box">
+       <form class="login-box" id="login-form">
 
-    <input type="email" placeholder="Email">
+    <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+    >
 
     <div class="password-box">
-        <input type="password" id="password" placeholder="Password">
 
-        <label class="show-password">
-            <input
-                type="checkbox"
-                onclick="password.type = this.checked ? 'text' : 'password'"
-            >
-            <i class="fa fa-eye"></i>
-        </label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+        >
+
+        <i class="fa fa-eye" id="show-password"></i>
+
     </div>
 
-    <button type="submit">
+    <p id="login-error"></p>
+
+    <button type="submit" class="google-btn">
         Login
     </button>
-
-   <div class="sign-box">
-    <button type="button" class="google-btn">
-        <img src="images/google.png" alt="Google">
-        <span>Sign in With Google Account</span>
-    </button>
-</div>
-
-</div>
-    </form>
-
    
-    <h3>
-        I don't have an Account,
-        <a href="Signup.html">Sign in</a>
-    </h3>
 
-</div>
-</div>
+</form>
 
+<p>
+    Don't have an account?
+    <a href="Signup.html">Sign Up</a>
+</p>
 
+<script type="module" src="login.js"></script>
 
-    <script src="script.js"></script>
+    <script  src="script.js"></script>
 </body>
 </html>

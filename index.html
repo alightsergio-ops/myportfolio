@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta charset="UTF-8"> <!-- Mobile Responsive --> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- SEO --> 
+   <title>Barutwanayo Sergio | Front-End Developer</title>
+    <meta name="description" content="Barutwanayo Sergio is a Front-End Developer from Rwanda creating responsive, modern and user-friendly websites.">
+    <meta name="keywords" content="Barutwanayo Sergio, Sergio Barutwanayo, Front-End Developer, Web Developer, Rwanda, HTML, CSS, JavaScript"> 
+    <meta name="author" content="Barutwanayo Sergio"> <!-- Search Engine Instructions --> 
+    <meta name="robots" content="index, follow"> <!-- Canonical URL -->
+     <link rel="canonical" href="https://portfolio-2b43f.web.app/"> <!-- Open Graph: Facebook, WhatsApp, LinkedIn -->
+      <meta property="og:type" content="website"> 
+     <meta property="og:url" content="https://portfolio-2b43f.web.app/">
+      <meta property="og:title" content="Barutwanayo Sergio | Front-End Developer"> 
+     <meta property="og:description" content="Explore the portfolio, projects, skills and experience of Barutwanayo Sergio.">
+      <meta property="og:image" content="https://portfolio-2b43f.web.app/images/photo.png"> <!-- Twitter / X --> 
+      <meta name="twitter:card" content="summary_large_image">
+       <meta name="twitter:title" content="Barutwanayo Sergio | Front-End Developer">
+        <meta name="twitter:description" content="Explore the portfolio, projects, skills and experience of Barutwanayo Sergio."> 
+        <meta name="twitter:image" content="https://portfolio-2b43f.web.app/images/photo.png"> <!-- Favicon --> 
+        <link rel="icon" type="image/png" href="./images/photo.png"> <!-- Google Fonts --> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Font Awesome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
     margin: 0;
@@ -483,7 +495,9 @@ background: rgb(214, 226, 255);
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-
+.down a{
+    text-decoration: none;
+}
 .resume-column h2,
 .skills-box h2 {
     font-size: 18px;
@@ -558,22 +572,237 @@ background: rgb(214, 226, 255);
     border-color: #f29b38;
 }
 
-@media (max-width: 700px) {
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
 
-    .top-section,
-    .skills-section {
+/* Tablets */
+@media (max-width: 900px) {
+
+    header {
+        width: 95%;
+    }
+
+    .contains {
+        width: 95%;
+    }
+
+    .hero,
+    .home,
+    .about,
+    .resume,
+    .contact {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
-    .container-box {
-        padding: 25px 15px;
+    .profile-image {
+        margin: 0 auto;
     }
 
-    .resume-title h1 {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 95%;
+        margin: 10px auto;
+        padding: 12px 15px;
+        flex-wrap: wrap;
+    }
+
+    /* Logo */
+    header .logo {
+        font-size: 22px;
+    }
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Main container */
+    .contains {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    /* Buttons */
+    button {
+        max-width: 100%;
+    }
+
+    /* Contact */
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Resume */
+    .resume {
+        grid-template-columns: 1fr;
+    }
+
+    /* Blog */
+    #blogPosts {
+        width: 100%;
+    }
+
+    .blog-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .blog-card h2 {
+        font-size: 21px;
+    }
+
+    .blog-meta {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .blog-card p {
+        font-size: 14px;
+    }
+
+    /* Single Post */
+    .single-post {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .single-post h1 {
+        font-size: 28px;
+    }
+
+    .single-post-content {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Login */
+    .login-box {
+        width: 95%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    .login-box input,
+    .login-box button {
+        width: 100%;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .blog-card {
+        padding: 15px;
+    }
+
+    .blog-card h2 {
+        font-size: 19px;
+    }
+
+    .single-post h1 {
         font-size: 24px;
     }
 }
+
+
     </style>
 </head>
 <body>
@@ -591,17 +820,17 @@ background: rgb(214, 226, 255);
 
           <div class="icon">
             <div class="icons">
-            <i class="fa fa-facebook"></i>
+           <a href="https://www.facebook.com/profile.php?id=61581350833872"> <i class="fa fa-facebook"></i> </a>
 </div>
             <div class="icons">    
-            <i class="fa fa-linkedin"></i>
+            <a href="https://www.linkedin.com/feed/"> <i class="fa fa-linkedin"></i></a>
 
             </div>
             <div class="icons">
-            <i class="fa fa-twitter"></i>
+            <a href="https://x.com/sergio125ai"> <i class="fa fa-twitter"></i></a> 
                      </div>
             <div class="icons">
-                <i class="fa fa-github"></i>
+               <a href="https://github.com/alightsergio-ops?tab=repositories"> <i class="fa fa-github"></i></a>
             </div>
             
           </div>
@@ -635,7 +864,8 @@ background: rgb(214, 226, 255);
 <div class="download">
     <i class="fa fa-download"></i>
     <div>
-        <Button downloading>download</Button>
+      <a href="Work/cv/MyResume.pdf" > <Button downloading>download</Button>
+         </a>
     </div>
 
 </div>
