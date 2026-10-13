@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | SG Dashboard</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #252b36;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #171c2c;
+    padding: 25px 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    margin: 0 15px 35px;
+}
+
+.logo span {
+    color: #ff641e;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #c6cada;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a i {
+    width: 25px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #ff641e;
+    color: white;
+}
+
+.main {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p,
+.description {
+    color: #777f90;
+}
+
+.settings-card {
+    background: white;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.profile-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff0e9;
+    color: #ff641e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.settings-card h2 {
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dce0e8;
+    border-radius: 8px;
+    padding: 0 48px 0 14px;
+    font-size: 15px;
+    outline: none;
+}
+
+.password-field input:focus {
+    border-color: #ff641e;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #777f90;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#update-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #ff641e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#update-btn:hover {
+    background: #e9510c;
+}
+
+#update-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#message.success {
+    color: #16803d;
+}
+
+#message.error {
+    color: #d93025;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 75px;
+        padding: 20px 8px;
+    }
+
+    .logo {
+        margin: 0 8px 30px;
+        font-size: 25px;
+    }
+
+    .sidebar a {
+        text-align: center;
+        font-size: 0;
+        padding: 15px 5px;
+    }
+
+    .sidebar a i {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .main {
+        margin-left: 75px;
+        padding: 20px 12px;
+    }
+
+    .settings-card {
+        padding: 22px 16px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
+
+          </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2 class="logo">S<span>G</span></h2>
+
+        <a href="dashboard.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+        <a href="users.html"><i class="fa fa-users"></i> Users</a>
+        <a href="blog.html"><i class="fa fa-pencil"></i> Blog</a>
+        <a href="analytics.html"><i class="fa fa-bar-chart"></i> Analytics</a>
+        <a href="settings.html" class="active">
+            <i class="fa fa-cog"></i> Settings
+        </a>
+        <a href="dashboard.html" id="logout">
+            <i class="fa fa-sign-out"></i> Logout
+        </a>
+    </aside>
+
+    <main class="main">
+        <header>
+            <h1>Account Settings</h1>
+            <p>Manage your account and security.</p>
+        </header>
+
+        <section class="settings-card">
+            <div class="profile-icon">
+                <i class="fa fa-user-circle"></i>
+            </div>
+
+            <h2>Change Password</h2>
+            <p class="description">
+                Update your password to keep your account secure.
+            </p>
+
+            <form id="password-form">
+                <label for="current-password">Current Password</label>
+                <div class="password-field">
+                    <input type="password" id="current-password"
+                           placeholder="Enter current password" required>
+                    <button type="button" class="toggle-password"
+                            data-target="current-password"
+                            aria-label="Show current password">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </div>
+
+                <label for="new-password">New Password</label>
+                <div class="password-field">
+                    <input type="password" id="new-password"
+                           placeholder="Enter new password"
+                           minlength="6" required>
+                    <button type="button" class="toggle-password"
+                            data-target="new-password"
+                            aria-label="Show new password">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </div>
+
+                <label for="confirm-password">Confirm New Password</label>
+                <div class="password-field">
+                    <input type="password" id="confirm-password"
+                           placeholder="Confirm new password"
+                           minlength="6" required>
+                    <button type="button" class="toggle-password"
+                            data-target="confirm-password"
+                            aria-label="Show confirmation password">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </div>
+
+                <p id="message" role="status" aria-live="polite"></p>
+
+                <button type="submit" id="update-btn">
+                    <i class="fa fa-lock"></i> Update Password
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="settings.js"></script>
+</body>
+</html>
