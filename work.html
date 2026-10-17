@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -523,6 +522,37 @@ border-bottom: 1px solid;
     }
 
 }
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 7px;
+    background: #ff641e;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #e65310;
+    transform: translateY(-2px);
+}
+
+.project-btn.github-btn {
+    background: #222;
+    color: white;
+}
+
+.project-btn.github-btn:hover {
+    background: #444;
+}
     </style>
 </head>
 <body>
@@ -583,6 +613,7 @@ border-bottom: 1px solid;
 </div>
         <div class="down">  
 <div class="download">
+    <a href="Work/cv/MyResume.pdf">  
     <i class="fa fa-download"></i>
     <div>
         <Button downloading>download</Button>
@@ -625,7 +656,6 @@ border-bottom: 1px solid;
                 <span>Contact</span>
                 </a>
             </div>
-            
             <div class="Login">
               <a href="login.html"> <i class="fa fa-user"></i>
                 <span>Login</span>
@@ -641,63 +671,105 @@ border-bottom: 1px solid;
             <h1>Work</h1>
         </div>
 
-        <div class="categories">
-            <span class="active">All</span>
-            <span>App Development</span>
-            <span>Web Development</span>
-            <span>Design</span>
-            <span>Mentorship</span>
+<div class="categories">
+    <span class="active">All</span>
+    <span>App Development</span>
+    <span>Web Development</span>
+    <span>Design</span>
+    <span>Mentorship</span>
+</div>
+
+<div class="projects">
+
+    <!-- Project 1: Smart Bank App -->
+    <div class="project-card">
+        <img src="images/smart.png" alt="Smart Bank App">
+
+        <div class="project-info">
+            <small>App Development</small>
+            <h3>Smart Bank App</h3>
+
+            <div class="project-links">
+                <a href="https://alightsergio-ops.github.io/smart-bank-app/"
+                   class="project-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">Live Demo</a>
+
+                <a href="https://github.com/alightsergio-ops/smart-bank-app"
+                   class="project-btn github-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+            </div>
         </div>
     </div>
 
-    <div class="projects">
-        <div class="project-card">
-            <img src="images/smart.png" alt="Smart Bank App">
+    <!-- Project 2: Blog / Next.js -->
+    <div class="project-card">
+        <img src="images/blog.png" alt="Blog project">
 
-            <div class="project-info">
-                <small>App Development</small>
-                <h3>Smart Bank App</h3>
+        <div class="project-info">
+            <small>Web Development</small>
+            <h3>Next.js Blog</h3>
+
+            <div class="project-links">
+                <a href="#"
+                   class="project-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">Live Demo</a>
+
+                <a href="#"
+                   class="project-btn github-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
-
-        <div class="project-card">
-            <img src="images/blog.png" alt="Blog">
-
-            <div class="project-info">
-                <small>Blog</small>
-                <h3>NEXT.js</h3>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="images/techear.png" alt="Rental">
-
-            <div class="project-info">
-                <small>UI/UX</small>
-                <h3>Rental</h3>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <img src="images/mentor.png" alt="Tech Mentor">
-
-            <div class="project-info">
-                <small>Mentorship</small>
-                <h3>Tech Mentor</h3>
-            </div>
-        </div>
-
-
-        <div class="project-card">
-            <img src="images/ideal.png" alt="IdeaFlow">
-
-            <div class="project-info">
-                <small>Web Development</small>
-                <h3>IdeaFlow</h3>
-            </div>
-        </div>
-
     </div>
+
+    <!-- Project 3: Rent Ease -->
+    <div class="project-card">
+        <img src="images/techear.png" alt="Rent Ease">
+
+        <div class="project-info">
+            <small>Web Development</small>
+            <h3>Rent Ease</h3>
+
+            <div class="project-links">
+                <a href="https://alightsergio-ops.github.io/rent-ease/"
+                   class="project-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">Live Demo</a>
+
+                <a href="https://github.com/alightsergio-ops/rent-ease"
+                   class="project-btn github-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4: Tech Mentor -->
+    <div class="project-card">
+        <img src="images/mentor.png" alt="Tech Mentor">
+
+        <div class="project-info">
+            <small>Mentorship</small>
+            <h3>Tech Mentor</h3>
+
+            <div class="project-links">
+                <a href="https://alightsergio-ops.github.io/tech-mentor/"
+                   class="project-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">Live Demo</a>
+
+                <a href="https://github.com/alightsergio-ops/tech-mentor"
+                   class="project-btn github-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </div>
 
