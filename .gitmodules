@@ -1,3 +1,6 @@
 [submodule "rent-ease"]
 	path = rent-ease
 	url = https://github.com/alightsergio-ops/rent-ease.git
+[submodule "smart-bank-app"]
+	path = smart-bank-app
+	url = https://github.com/alightsergio-ops/smart-bank-app.git
